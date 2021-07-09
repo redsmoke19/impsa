@@ -21,11 +21,17 @@ p {
     line-height: 1.14;
     margin: 0 0 30px 0;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+    }
   }
   &__text {
     font-size: 22px;
     font-weight: bold;
     line-height: 1.13;
+    @media screen and (max-width: 767px) {
+      font-size: 19px;
+    }
   }
   &__red {
     color: #bd191e;
@@ -36,16 +42,65 @@ p {
 }
 
 .object-type-hero {
-  background-color: tomato;
+  background-color: gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .solution-hero__title {
+    max-width: 600px;
+    margin: 0 0 40px 0;
+    @media screen and (max-width: 767px) {
+      margin: 0 0 20px 0;
+    }
+  }
   .object-type-hero__wrapper {
-    padding-bottom: 220px;
+    padding-bottom: 240px;
     padding-top: 50px;
+    max-width: unset;
+    @media screen and (max-width: 1280px) {
+      padding-bottom: 120px;
+    }
+    @media screen and (max-width: 530px) {
+      padding-bottom: 200px;
+    }
   }
   .object-type-hero__subtitle {
-    font-size: 33px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 25px;
+    letter-spacing: 1.65px;
     margin: 0;
+    max-width: 600px;
+    @media screen and (max-width: 991px) {
+      max-width: 50%;
+    }
+    @media screen and (max-width: 530px) {
+      max-width: 100%;
+    }
+  }
+  .object-type-hero__image-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 740px;
+    width: 100%;
+    @media screen and (max-width: 1280px) {
+      max-width: 400px;
+    }
+    @media screen and (max-width: 991px) {
+      max-width: 300px;
+    }
+  }
+  .object-type-hero__image {
+    position: relative;
+    padding-top: 60%;
+  }
+  .object-type-hero__image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -72,6 +127,9 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: -90px -65px 0;
+    @media screen and (max-width: 767px) {
+      margin: -40px 0 0;
+    }
   }
   &__item {
     display: flex;
@@ -80,6 +138,13 @@ p {
     width: 33.333%;
     &::before {
       display: none;
+    }
+    @media screen and (max-width: 1280px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 40px 0 0;
+      width: 100%;
     }
   }
   &__box {
@@ -109,7 +174,13 @@ p {
 }
 
 .object-type-defender {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 80px 0 200px;
+  @media screen and (max-width: 1280px) {
+    padding: 60px 0 140px;
+  }
   .object-type__text {
     margin: 0 0 40px 0;
   }
@@ -124,7 +195,65 @@ p {
 }
 
 .object-type-info {
-  .object-type__title {
-    text-align: center;
+  background-image: url('../images/common/object-type-hire-bg.png'), linear-gradient( 3deg, rgb(196,25,30) 25%, rgb(236,47,53) 100%);
+  background-position: left, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50% 100%, 100%;
+  @media screen and (max-width: 991px) {
+    background-image: url('../images/common/object-type-hire-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__content {
+    display: flex;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  &__hire {
+    flex: 0 0 50%;
+    padding: 40px 0 35px;
+    @media screen and (max-width: 991px) {
+      flex: 0 0 100%;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    padding: 100px 40px 60px;
+    @media screen and (max-width: 991px) {
+      flex: 0 0 100%;
+      padding: 50px 0 40px;
+    }
+  }
+  &__text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    @media screen and (max-width: 991px) {
+      color: #21242a;
+    }
+  }
+  &__link {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    @media screen and (max-width: 991px) {
+      color: #21242a;
+    }
+  }
+  &__desc {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.5;
+    padding-top: 40px;
+    @media screen and (max-width: 991px) {
+      color: #21242a;
+    }
   }
 }
