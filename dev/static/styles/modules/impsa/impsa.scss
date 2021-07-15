@@ -47,6 +47,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   .solution-hero__title {
+    font-weight: 800;
     max-width: 600px;
     margin: 0 0 40px 0;
     position: relative;
@@ -110,9 +111,10 @@ p {
 
 .object-type-areas {
   color: #21242a;
-  margin: 0 0 160px 0;
+  margin: 0 0 120px 0;
   &__top {
-    padding: 88px 0;
+    margin: 0 0 88px 0;
+    padding: 88px 0 0;
   }
   &__title {
     color: #bd191e;
@@ -130,7 +132,7 @@ p {
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -90px -65px 0;
+    margin: -44px 0 0;
     @media screen and (max-width: 767px) {
       margin: -40px 0 0;
     }
@@ -138,22 +140,31 @@ p {
   &__item {
     display: flex;
     flex-direction: column;
-    padding: 90px 65px 0;
+    padding: 44px 44px 44px !important;
+    transition: all ease-out 0.15s;
     width: 33.333%;
+    &:hover {
+      color: red;
+      box-shadow: 0px 0px 21px 6px rgba(34, 60, 80, 0.2);
+    }
     &::before {
       display: none;
     }
     @media screen and (max-width: 1280px) {
       width: 50%;
+      &:hover {
+        box-shadow: unset;
+      }
     }
     @media screen and (max-width: 767px) {
-      padding: 40px 0 0;
+      padding: 40px 0 40px !important;
       width: 100%;
     }
   }
   &__box {
     display: flex;
-    margin: 0 0 45px 0;
+    margin: 0 0 20px 0;
+    min-height: 145px;
     & > * {
       flex: 0 1 auto;
     }
@@ -164,7 +175,7 @@ p {
   &__item-title {
     font-size: 18px;
     font-weight: bold;
-    line-height: normal;
+    line-height: 1;
   }
   &__item-text {
     font-size: 18px;
