@@ -47,9 +47,11 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  min-height: 416px;
   .solution-hero__title {
     font-weight: 800;
     max-width: 600px;
+    min-height: unset;
     margin: 0 0 40px 0;
     position: relative;
     z-index: 2;
@@ -58,7 +60,7 @@ p {
     }
   }
   .object-type-hero__wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 80px; //184px
     padding-top: 80px;
     max-width: unset;
     @media screen and (max-width: 1280px) {
@@ -88,7 +90,7 @@ p {
     position: absolute;
     right: 0;
     bottom: 0;
-    max-width: 540px;
+    max-width: 580px;
     width: 100%;
     @media screen and (max-width: 1280px) {
       max-width: 500px;
@@ -104,17 +106,19 @@ p {
   .object-type-hero__image img {
     position: absolute;
     left: 0;
-    bottom: -110px;
-    width: 540px;
+    // bottom: -110px;
+    bottom: -200px;
+    // width: 540px;
+    width: 100%;
     height: auto;
     @media screen and (max-width: 1280px) {
       width: 500px;
     }
     @media screen and (max-width: 991px) {
-      bottom: -80px;
+      bottom: -150px;
     }
     @media screen and (max-width: 530px) {
-      // bottom: -10px;
+      bottom: -80px;
     }
   }
 }

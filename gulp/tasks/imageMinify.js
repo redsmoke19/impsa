@@ -12,15 +12,15 @@ module.exports = function imageMinify() {
     '!dev/static/images/sprite/**/*',
   ])
     .pipe(newer('dist/static/images/'))
-    .pipe(
-      imagemin([
-        imagemin.gifsicle({ interlaced: true }),
-        imagemin.svgo({
-          plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
-        }),
-        pngQuant(),
-        jpegRecompress(),
-      ])
-    )
+    // .pipe(
+    //   imagemin([
+    //     imagemin.gifsicle({ interlaced: true }),
+    //     imagemin.svgo({
+    //       plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+    //     }),
+    //     pngQuant(),
+    //     jpegRecompress(),
+    //   ])
+    // )
     .pipe(dest('dist/static/images/'));
 };
