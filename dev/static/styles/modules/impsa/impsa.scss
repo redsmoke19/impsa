@@ -101,14 +101,11 @@ p {
   }
   .object-type-hero__image {
     position: relative;
-    // padding-top: 60%;
   }
   .object-type-hero__image img {
     position: absolute;
     left: 0;
-    // bottom: -110px;
     bottom: -200px;
-    // width: 540px;
     width: 100%;
     height: auto;
     @media screen and (max-width: 1280px) {
@@ -146,7 +143,7 @@ p {
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -44px -44px 0;
+    margin: -44px 0 0;
     @media screen and (max-width: 767px) {
       margin: -40px 0 0;
     }
