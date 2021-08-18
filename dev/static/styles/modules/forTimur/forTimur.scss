@@ -1,0 +1,24 @@
+.press-center {
+  background-color: #eaeaea;
+  padding: 90px 0 50px;
+  &__title {
+    color: #bd191e;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.14;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+  &__text {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.13;
+    margin: 0 0 25px 0;
+    @media screen and (max-width: 767px) {
+      font-size: 19px;
+    }
+  }
+}

@@ -3,6 +3,7 @@ li {
   margin: 0;
   padding: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -152,11 +153,11 @@ p {
     display: flex;
     flex-direction: column;
     padding: 44px 44px 44px !important;
-    transition: all ease-out 0.15s;
+    transition: all ease-out .15s;
     width: 33.333%;
     &:hover {
       color: red;
-      box-shadow: 0px 0px 21px 6px rgba(34, 60, 80, 0.2);
+      box-shadow: 0 0 21px 6px rgba(34, 60, 80, .2);
     }
     &::before {
       display: none;
@@ -176,7 +177,7 @@ p {
     display: flex;
     margin: 0 0 20px 0;
     min-height: 125px;
-    & > * {
+    > * {
       flex: 0 1 auto;
     }
   }
@@ -221,7 +222,7 @@ p {
 }
 
 .object-type-info {
-  background-image: url('../images/common/object-type-hire-bg.png'), linear-gradient( 3deg, rgb(196,25,30) 25%, rgb(236,47,53) 100%);
+  background-image: url('../images/common/object-type-hire-bg.png'), linear-gradient(3deg, rgb(196, 25, 30) 25%, rgb(236, 47, 53) 100%);
   background-position: left, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 50% 100%, 100%;
@@ -255,7 +256,7 @@ p {
     }
   }
   &__text {
-    color: #ffffff;
+    color: #fff;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
@@ -264,7 +265,7 @@ p {
     }
   }
   &__link {
-    color: #ffffff;
+    color: #fff;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
@@ -274,7 +275,7 @@ p {
     }
   }
   &__desc {
-    color: #ffffff;
+    color: #fff;
     font-size: 24px;
     line-height: 1.5;
     padding-top: 40px;
