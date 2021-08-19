@@ -12,11 +12,11 @@ const groupMedia = require('gulp-group-css-media-queries');
 
 module.exports = function styles() {
   return gulp
-    .src('dev/static/styles/styles.scss')
+    .src('dev/static/styles/modules/about/about.scss')
     .pipe(plumber())
     .pipe(gulpif(!argv.prod, sourcemaps.init()))
     .pipe(scss())
-    // .pipe(groupMedia())
+    .pipe(groupMedia())
     .pipe(
       autoprefixer({
         overrideBrowserslist: ['last 4 version'],

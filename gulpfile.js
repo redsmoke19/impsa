@@ -6,6 +6,7 @@ const imageMinify = require('./gulp/tasks/imageMinify');
 const styles = require('./gulp/tasks/styles');
 const stylesMy = require('./gulp/tasks/stylesMy');
 const stylesForTimur = require('./gulp/tasks/stylesTimur');
+const stylesAbout = require('./gulp/tasks/styles-about');
 const clean = require('./gulp/tasks/clean');
 const pug2html = require('./gulp/tasks/pug');
 const spriteSVG = require('./gulp/tasks/spriteSVG');
@@ -21,6 +22,7 @@ const dev = gulp.parallel(
   styles,
   stylesMy,
   stylesForTimur,
+  stylesAbout,
   imageMinify,
   webP,
   spriteSVG,

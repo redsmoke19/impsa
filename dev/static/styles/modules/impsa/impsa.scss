@@ -91,7 +91,7 @@ p {
     position: absolute;
     right: 0;
     bottom: 0;
-    max-width: 580px;
+    max-width: 900px;
     width: 100%;
     @media screen and (max-width: 1280px) {
       max-width: 500px;
@@ -105,8 +105,8 @@ p {
   }
   .object-type-hero__image img {
     position: absolute;
-    left: 0;
-    bottom: -200px;
+    left: 45px;
+    bottom: -300px;
     width: 100%;
     height: auto;
     @media screen and (max-width: 1280px) {

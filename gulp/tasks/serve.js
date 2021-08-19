@@ -6,6 +6,7 @@ const pngSprite = require('./spritePNG');
 const styles = require('./styles');
 const stylesMy = require('./stylesMy');
 const stylesTimur = require('./stylesTimur');
+const stylesAbout = require('./styles-about');
 const pug2html = require('./pug');
 const script = require('./scripts');
 const server = require('browser-sync').create();
@@ -25,6 +26,7 @@ module.exports = function serve(cb) {
   gulp.watch('dev/static/images/sprite/png/*.png', gulp.series(pngSprite)).on('change', server.reload);
   gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles)).on('change', server.reload);
   gulp.watch('dev/static/styles/modules/impsa/impsa.scss', gulp.series(stylesMy)).on('change', server.reload);
+  gulp.watch('dev/static/styles/modules/about/about.scss', gulp.series(stylesAbout)).on('change', server.reload);
   gulp.watch('dev/static/styles/modules/press-center/press-center.scss', gulp.series(stylesTimur)).on('change', server.reload);
   gulp.watch('dev/static/js/**/*.js', gulp.series(script)).on('change', server.reload);
   gulp.watch('dev/pug/**/*.pug', gulp.series(pug2html)).on('change', server.reload);
