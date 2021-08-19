@@ -1,0 +1,131 @@
+.press-center {
+  background-color: #eaeaea;
+  padding: 90px 0 50px;
+  &__title {
+    color: #bd191e;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.14;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+  &__text {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.13;
+    margin: 0 0 25px 0;
+    @media screen and (max-width: 767px) {
+      font-size: 19px;
+    }
+  }
+  &__news {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1279px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__new {
+    align-items: flex-start;
+    background-color: #21242a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    padding: 30px 30px 20px;
+    position: relative;
+    @media screen and (max-width: 1279px) {
+      flex: 0 0 47%;
+    }
+    @media screen and (max-width: 767px) {
+      flex: 0 0 100%;
+      &:not(:last-child) {
+        margin: 0 0 40px 0;
+      }
+    }
+    &::before {
+      display: none;
+    }
+    &--main {
+      background-size: cover;
+      background-repeat: no-repeat;
+      flex: 0 0 46%;
+      padding-top: 120px;
+      @media screen and (max-width: 1279px) {
+        flex: 0 0 100%;
+        margin: 0 0 40px 0;
+      }
+      @media screen and (max-width: 767px) {
+        margin: 0;
+      }
+    }
+  }
+  &__date-label {
+    align-items: center;
+    background-color: #bd191e;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    height: 68px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 68px;
+  }
+  &__date {
+    display: block;
+    line-height: 1.1;
+  }
+  &__heading {
+    border-bottom: 2px solid #bd191e;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.13;
+    margin: 0 0 40px 0;
+    padding-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      font-size: 19px;
+    }
+    &--main {
+      border: none;
+      margin: 0 0 20px 0;
+    }
+  }
+  &__description {
+    font-size: 20px;
+    line-height: 1.13;
+    margin: 0 0 20px 0;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+  &__more {
+    color: #ffffff;
+    display: block;
+    font-size: 18px;
+    margin: auto 0 0 auto;
+  }
+  &__all-news {
+    align-items: center;
+    background-color: #bd191e;
+    box-shadow: 0px 7px 7px 0px rgba(33, 36, 42, 0.18),inset 0px 8px 10px 0px rgba(92, 6, 9, 0.18);
+    color: #ffffff;
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+    padding: 10px;
+    text-decoration: none;
+    width: max-content;
+    span {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+

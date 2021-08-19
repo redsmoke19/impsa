@@ -12,7 +12,7 @@ const groupMedia = require('gulp-group-css-media-queries');
 
 module.exports = function styles() {
   return gulp
-    .src('dev/static/styles/modules/forTimur/forTimur.scss')
+    .src('dev/static/styles/modules/press-center/press-center.scss')
     .pipe(plumber())
     .pipe(gulpif(!argv.prod, sourcemaps.init()))
     .pipe(scss())

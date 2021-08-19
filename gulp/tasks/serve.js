@@ -25,7 +25,7 @@ module.exports = function serve(cb) {
   gulp.watch('dev/static/images/sprite/png/*.png', gulp.series(pngSprite)).on('change', server.reload);
   gulp.watch('dev/static/styles/**/*.scss', gulp.series(styles)).on('change', server.reload);
   gulp.watch('dev/static/styles/modules/impsa/impsa.scss', gulp.series(stylesMy)).on('change', server.reload);
-  gulp.watch('dev/static/styles/modules/forTimur/forTimur.scss', gulp.series(stylesTimur)).on('change', server.reload);
+  gulp.watch('dev/static/styles/modules/press-center/press-center.scss', gulp.series(stylesTimur)).on('change', server.reload);
   gulp.watch('dev/static/js/**/*.js', gulp.series(script)).on('change', server.reload);
   gulp.watch('dev/pug/**/*.pug', gulp.series(pug2html)).on('change', server.reload);
   gulp.watch('dist/*.html').on('change', server.reload);
