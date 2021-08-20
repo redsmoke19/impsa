@@ -5,12 +5,28 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 991px) {
+      flex-wrap: wrap;
+    }
   }
   &__left-col {
     flex: 0 0 70%;
+    @media screen and (max-width: 1279px) {
+      flex: 0 0 65%;
+    }
+    @media screen and (max-width: 991px) {
+      flex: 0 0 100%;
+      margin: 0 0 30px 0;
+    }
   }
   &__right-col {
     flex: 0 0 28%;
+    @media screen and (max-width: 1279px) {
+      flex: 0 0 33%;
+    }
+    @media screen and (max-width: 991px) {
+      flex: 0 0 100%;
+    }
   }
   &__subtitle {
     color: #c3191e;
@@ -62,6 +78,7 @@
   }
   &__quote-company {
     font-size: 17px;
+    text-align: right;
   }
   &__license {
     background-color: #c3191e;
@@ -88,7 +105,7 @@
 .about-company-advantages {
   margin: 0 0 70px 0;
   &__title {
-    font-weight: bold;
+    font-weight: 800;
     margin: 0 0 30px 0;
     text-transform: uppercase;
   }
@@ -108,6 +125,12 @@
     &:hover {
       transform: scale(1.1);
     }
+    @media screen and (max-width: 1279px) {
+      flex: 0 0 50%;
+    }
+    @media screen and (max-width: 767px) {
+      flex: 0 0 100%;
+    }
   }
   &__inner {
     box-shadow: 0 0 29px 0 rgba(62, 62, 62, .14);
@@ -123,6 +146,9 @@
     font-weight: bold;
     margin: 0 0 20px 0;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
   }
   &__text {
     font-size: 17px;
@@ -132,4 +158,137 @@
 
 .about-mission {
   background-color: #e8e8e8 !important;
+}
+
+.about-company-history {
+  padding: 50px 0 60px;
+  &__title {
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+  }
+  &__year-slider {
+    margin: 0 0 40px 0;
+  }
+  &__year-item {
+    width: auto;
+    &::before {
+      display: none;
+    }
+  }
+  &__year {
+    font-size: 17px;
+    text-decoration: underline;
+  }
+  &__item {
+    &::before {
+      display: none !important;
+    }
+  }
+  &__inner {
+    background-color: #e8e8e8;
+    padding: 30px 50px;
+  }
+}
+
+.about-company-community {
+  padding: 50px 0 60px;
+  &__title {
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__col {
+    flex: 0 0 48%;
+    @media screen and (max-width: 767px) {
+      flex: 0 0 100%;
+      &:not(:last-child) {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+  &__text {
+    font-size: 17px;
+    a {
+      font-weight: bold;
+    }
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.about-company-info {
+  background-image: linear-gradient(to right, rgb(232, 232, 232) 0%, rgb(232, 232, 232) 50%, rgb(236, 47, 53) 50%, rgb(236, 47, 53) 100%);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @media screen and (max-width: 991px) {
+    background-image: unset;
+    background-color: rgb(232, 232, 232);
+  }
+  &__content {
+    display: flex;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  &__hire {
+    flex: 0 0 50%;
+    padding: 40px 0 35px;
+    @media screen and (max-width: 991px) {
+      flex: 0 0 100%;
+    }
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    padding: 100px 40px 60px;
+    @media screen and (max-width: 991px) {
+      flex: 0 0 100%;
+      padding: 50px 0 40px;
+    }
+  }
+  &__text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    @media screen and (max-width: 991px) {
+      color: #21242a;
+    }
+  }
+  &__link {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    @media screen and (max-width: 991px) {
+      color: #21242a;
+    }
+  }
+  &__desc {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+    padding-top: 40px;
+    @media screen and (max-width: 991px) {
+      color: #21242a;
+    }
+  }
 }
