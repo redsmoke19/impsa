@@ -213,9 +213,11 @@
     }
   }
   &__year-item {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
     width: auto;
     &::before {
-      display: none;
+      display: none !important;
     }
     &--red {
       color: #c3191e;
@@ -228,15 +230,17 @@
   }
   &__slider {
     position: relative;
+    overflow: hidden;
   }
   &__item {
-    padding: 0 90px;
+    margin-bottom: 0 !important;
+    padding: 0 90px !important;
     width: 100%;
     @media screen and (max-width: 1279px) {
-      padding: 0 30px;
+      padding: 0 30px !important;
     }
     @media screen and (max-width: 991px) {
-      padding: 0;
+      padding: 0 !important;
     }
     &::before {
       display: none !important;
