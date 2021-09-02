@@ -253,7 +253,7 @@
 }
 
 .about-company-history {
-  padding: 50px 0 60px;
+  padding: 70px 0 60px;
   &__title {
     font-weight: 800;
     margin: 0 0 30px 0;
@@ -320,6 +320,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: relative;
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
     }
@@ -352,6 +353,14 @@
     font-size: 22px;
     font-weight: bold;
     margin: 0 0 20px 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    @media screen and (max-width: 767px) {
+      left: unset;
+      position: relative;
+      right: unset;
+    }
   }
   &__text {
     font-size: 17px;
